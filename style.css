@@ -1,0 +1,164 @@
+/*
+* {
+    outline: solid 1px red;
+}
+*/
+
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background-image: url("./images/amg-interior.jpg");
+    background-repeat: no-repeat;
+    background-size: 30vw;
+    overflow: hidden;
+}
+
+.image-text-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 175px;
+    background-color: #1f1f1f;
+    opacity: 0.9;
+}
+
+.image-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Playfair Display';
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.image-paragraph {
+    display: flex;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.accent {
+    color: #f98163;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 12px;
+    background-color: #1f1f1f;
+    font-family: 'Playfair Display';
+    border-left: solid 4px #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.form-subheader {
+    color: #f98163;
+}
+
+.form-subheader-text {
+    color: #ffffff;
+}
+
+input {
+    display: flex;
+    font-size: 21px;
+    font-family: 'Playfair Display';
+    color: #ffffff;
+    width: 250px;
+    height: 50px;
+    align-items: baseline;
+    background-color: #1f1f1f;
+    border: none;
+    border-bottom: solid 2px #ffffff;
+    border-radius: 0;
+    transition: 0.2s;
+    padding: 8px;
+}
+
+input:focus {
+    background-color: #333333;
+    border-bottom: solid 2px #f98163;
+    outline: none;
+}
+
+::placeholder {
+    font-family: 'Playfair Display';
+    color: #acacac;
+    font-size: 21px;
+}
+
+.form-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border: none;
+    padding: none;
+    padding: 10px 20px;
+    margin-top: 32px;
+    font-family: 'Playfair Display';
+    width: 250px;
+    font-weight: 800;
+    font-size: 24px;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #1f1f1f;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #f98163;
+    color: #1f1f1f;
+    z-index: 2;
+    transform: scale(1.05);
+}
