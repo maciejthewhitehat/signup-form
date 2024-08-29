@@ -25,7 +25,7 @@ body {
     align-items: center;
     width: 30%;
     height: 100%;
-    background-image: url("./images/amg-interior.jpg");
+    background: #1f1f1f url("./images/amg-interior.jpg");
     background-repeat: no-repeat;
     background-size: 30vw;
     overflow: hidden;
@@ -79,16 +79,10 @@ body {
 
 form {
     display: flex;
+    flex: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-}
-
-.form-row {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
 }
 
 .form-header {
@@ -97,19 +91,39 @@ form {
     align-items: center;
     font-weight: 800;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 64px;
 }
 
 .form-subheader {
+    display: flex;
+    width: 100%;
     color: #f98163;
+    font-size: 20px;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 32px;
 }
 
 .form-subheader-text {
     color: #ffffff;
 }
 
-input {
+.form-row {
     display: flex;
+    flex: 0;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.form-cell {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+input {
+    display: block;
     font-size: 21px;
     font-family: 'Playfair Display';
     color: #ffffff;
@@ -136,11 +150,6 @@ input:focus {
     font-size: 21px;
 }
 
-.form-cell {
-    display: flex;
-    flex-direction: column;
-}
-
 button {
     border: none;
     padding: none;
@@ -161,4 +170,5 @@ button:hover {
     color: #1f1f1f;
     z-index: 2;
     transform: scale(1.05);
+    cursor: pointer;
 }
